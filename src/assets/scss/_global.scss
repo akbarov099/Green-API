@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $golos_fonts !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-height: auto;
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: $golos_fonts !important;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: $golos_fonts !important;
+}
+
+li, ol {
+  list-style: none;
+  font-family: $golos_fonts !important;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: $golos_fonts !important;
+}
+
+a {
+  text-decoration: none;
+  font-family: $golos_fonts !important;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: $golos_fonts !important;
+}
+
+select {
+  outline: none;
+  cursor: pointer;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.answer, .message {
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: white;
+  max-width: 300px;
+  width: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.answer {
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+  align-self: flex-start;
+}
+
+.message {
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  align-self: flex-end;
+}
+
+.answer::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #1CB5E0;
+  top: -20px;
+  left: -15px;
+}
+
+.message::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #3F5EFB;
+  top: -20px;
+  right: -15px;
+}
