@@ -5,6 +5,12 @@ import { VscSend } from "react-icons/vsc";
 export const Send = () => {
   const { text, setText, sendMessage } = useChatStore();
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter" && text.trim() !== "") { 
+      sendMessage();
+    }
+  };
+
   return (
     <div className="send">
       <div className="container">
@@ -14,8 +20,12 @@ export const Send = () => {
             placeholder="Start typing..."
             value={text}
             onChange={(e) => setText(e.target.value)}
+            onKeyDown={handleKeyPress} 
           />
-          <VscSend className="send__icon" onClick={sendMessage} />
+          <VscSend
+            className="send__icon"
+            onClick={sendMessage}
+          />
         </div>
       </div>
     </div>

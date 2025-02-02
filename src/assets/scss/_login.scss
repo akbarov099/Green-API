@@ -1,0 +1,44 @@
+.login__wrapper {
+  width: 300px;
+  height: 350px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0 2px 4px #11111129;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+    input {
+      width: 90%;
+      height: 40px;
+      border-radius: 12px;
+      padding-left: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 20px;
+      border: 1px solid #e9ecef;
+    }
+
+    button {
+      color: #020105;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 500;
+      width: 90%;
+      height: 35px;
+      border-radius: 14px;
+      background: lightskyblue;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  }
+}
